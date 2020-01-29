@@ -1,0 +1,15 @@
+// define more site-wide breakpoints here
+$tablet: 800px;
+$desktop: 1200px;
+
+@mixin width($point) {
+    @media screen and (min-width: $point) {
+        @content;
+    }
+}
+
+@mixin on-mouse() {
+    @media (pointer: fine) {
+        @content;
+    }
+}
